@@ -1,14 +1,25 @@
 import { createRoot } from "react-dom/client"
 import "@mantine/core/styles.css"
 import { MantineProvider } from "@mantine/core"
-import { Home } from "./views"
 import { QueryClientProvider } from "./providers/query-client"
+import { createRouter, RouterProvider } from "@tanstack/react-router"
+import { routeTree } from "./routeTree.gen"
+
+const router = createRouter({
+  routeTree,
+})
+
+// src/app.tsx
+declare module "@tanstack/react-router" {
+  interface Register {
+    router: typeof router
+  }
+}
 
 const App = () => (
   <MantineProvider>
     <QueryClientProvider>
-      {/* TODO: test components - to remove */}
-      <Home />
+      <RouterProvider router={router} />
     </QueryClientProvider>
   </MantineProvider>
 )

@@ -1,7 +1,11 @@
 import { Container, Stack, Text, Title } from "@mantine/core"
-import { StarRating } from "@repo/ui"
+import { createFileRoute } from "@tanstack/react-router"
 
-export function Home() {
+export const Route = createFileRoute("/")({
+  component: HomePageComponent,
+})
+
+function HomePageComponent() {
   return (
     <Container
       size="md"
@@ -10,7 +14,6 @@ export function Home() {
       <Stack>
         <Title>Fantasy Value</Title>
         <Text c="dimmed">NFL player valuation tools</Text>
-        <StarRating />
       </Stack>
     </Container>
   )
