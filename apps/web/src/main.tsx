@@ -2,11 +2,14 @@ import { createRoot } from "react-dom/client"
 import "@mantine/core/styles.css"
 import { MantineProvider } from "@mantine/core"
 import { Home } from "./views"
+import { QueryClientProvider } from "./providers/query-client"
 
 const App = () => (
   <MantineProvider>
-    {/* TODO: test components - to remove */}
-    <Home />
+    <QueryClientProvider>
+      {/* TODO: test components - to remove */}
+      <Home />
+    </QueryClientProvider>
   </MantineProvider>
 )
 
