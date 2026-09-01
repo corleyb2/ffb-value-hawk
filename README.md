@@ -1,32 +1,51 @@
-# `Turborepo` Vite starter
+# Fantasy Football Value Hawk
 
-This is a community-maintained example. If you experience a problem, please submit a pull request with a fix. GitHub Issues will be closed.
+This is a hobby project for identifying potentially undervalued and overvalued NFL fantasy players using player performance, usage trends, roster context, market data, and eventually news-derived role signals.
 
-## Using this example
+## Goals
 
-Run the following command:
+- Keep the project free or very low-cost
+- Use open NFL data sources where practical
+- Track player usage and performance trends
+- Compare player outlook against fantasy market value
+- Surface sleepers, fades, and watchlist candidates
 
-```sh
-npx create-turbo@latest -e with-vite-react
-```
+## Stack
 
-## What's inside?
+### Frontend
+- React
+- Vite
+- TypeScript
+- Mantine
+- TanStack Query
 
-This Turborepo includes the following packages and apps:
+### Backend
+- Node.js
+- Express
+- TypeScript
+- Zod
 
-### Apps and Packages
+### Data
+- PostgreSQL
+- Prisma
+- nflverse
 
-- `web`: a React and [Vite](https://vite.dev) TypeScript app
-- `@repo/ui`: a stub component library shared by the `web` app
-- `@repo/eslint-config`: shared ESLint configuration
-- `@repo/typescript-config`: shared `tsconfig.json` files
+## Local Development
 
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Prerequisites
 
-### Utilities
+- Node.js
+- npm
+- PostgreSQL or Docker
 
-This Turborepo has some additional tools already set up for you:
+### Setup
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+```bash
+npm install
+````
+
+Additional database and startup instructions will be added as the development environment is finalized.
+
+## Status
+
+🚧 Phase 0 — Project Foundation
