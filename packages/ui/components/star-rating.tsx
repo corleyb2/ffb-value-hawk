@@ -1,7 +1,7 @@
 import { Rating } from "@mantine/core"
 import { useState } from "react"
 
-export function RatingDemo() {
+export function StarRating() {
   const [value, setValue] = useState(0)
 
   return (
