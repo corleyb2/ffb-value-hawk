@@ -13,6 +13,9 @@
     "@commitlint/config-conventional": "^21.2.2",
     "eslint": "10.9.1",
     "husky": "^9.1.7",
+    "postcss": "^8.5.26",
+    "postcss-preset-mantine": "^1.18.0",
+    "postcss-simple-vars": "^7.0.1",
     "prettier": "3.9.6",
     "turbo": "^2.10.12"
   },
@@ -28,5 +31,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@mantine/core": "^9.6.0",
+    "@mantine/hooks": "^9.6.0"
+  }
 }

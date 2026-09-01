@@ -1,2 +1,2 @@
-export * from "./header";
-export * from "./counter";
+// REMOVE when reusable componentry is built & explicitly export from here
+export * from "."
